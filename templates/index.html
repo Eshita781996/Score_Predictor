@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Score Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+    <h2 class="mb-4">Predict Exam Score</h2>
+    <form method="post" action="/predict">
+        <div class="mb-3">
+            <label>Hours Studied:</label>
+            <input type="number" step="any" name="hours_studied" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label>Hours Slept:</label>
+            <input type="number" step="any" name="hours_slept" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label>Attendance (%):</label>
+            <input type="number" step="any" name="attendance" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+        
+    </form>
+</body>
+</html>
